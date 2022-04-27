@@ -1,2 +1,6 @@
-# scss-test
+# Scss Basics With Coder Coder අක්කා 
  
+![Markdown Logo](img/Page.png)
+![Markdown Logo](img/code.png)
+
+## This is the cource code of JessThis is the source code of Jessica Chan's Scss basics course that has been typed by me
