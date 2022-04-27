@@ -1,4 +1,11 @@
+@use '../util/' as u;
+
 :root{
     --dark-color:rgb(26, 26, 26);
     --white-color:white;
+}
+
+.yellow{
+    background-color: hsl(54, 100%, 27%);
+    padding: u.rem(16);
 }

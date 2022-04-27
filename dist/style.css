@@ -17,18 +17,23 @@ body {
   color: white;
 }
 
-p.heshani {
-  font-family: "Open Sans", sans-serif;
-}
-
 h1, h2, h3 {
   font-weight: 700;
   line-height: 1.1;
   margin-top: 0;
 }
 
+h1 {
+  font-size: clamp(1.75rem, 1rem + 2vw, 2.5rem);
+}
+
+h2 {
+  font-size: clamp(1.375rem, 0.875rem + 1.5vw, 2.25rem);
+}
+
 p {
   margin-top: 0;
+  font-size: 1rem;
 }
 
 a, a:visited, a:active {
@@ -40,12 +45,21 @@ a, a:visited, a:active {
   --white-color:white;
 }
 
+.yellow {
+  background-color: hsl(54deg, 100%, 27%);
+  padding: 1rem;
+}
+
+.grid__widget--green, .grid__widget--magenta {
+  padding: 1rem;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
-  gap: 40px;
-  width: min(100% - 40px, 1000px);
+  gap: 2.5rem;
+  width: min(100% - 2.5rem, 62.5rem);
   margin-inline: auto;
 }
 @media (min-width: 56.25em) {
@@ -55,11 +69,34 @@ a, a:visited, a:active {
   }
 }
 .grid__main, .grid__sidebar {
-  padding: 40px;
+  padding: 2.5rem;
 }
 .grid__main {
   background-color: hsl(240deg, 100%, 28%);
 }
-.grid__sidebar {
+@media (min-width: 43.75em) {
+  .grid__main {
+    background-color: hsl(120deg, 100%, 22%);
+  }
+}
+@media (min-width: 56.25em) {
+  .grid__main {
+    background-color: hsl(24deg, 100%, 31%);
+  }
+}
+@media (max-width: 56.24875em) {
+  .grid__sidebar {
+    text-align: center;
+  }
+}
+@media (max-width: 43.74875em) {
+  .grid__sidebar {
+    text-align: right;
+  }
+}
+.grid__widget--magenta {
   background-color: hsl(300deg, 100%, 34%);
+}
+.grid__widget--green {
+  background-color: hsl(120deg, 100%, 21%);
 }/*# sourceMappingURL=style.css.map */
